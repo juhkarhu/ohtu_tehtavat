@@ -8,10 +8,7 @@ Increase Counter Once
     Counter Value Should Be  1
 
 Increase Counter Four Times
-    Increase Counter
-    Increase Counter
-    Increase Counter
-    Increase Counter
+    Increase Counter Four Times
     Counter Value Should Be  4
 
 Increase Counter Many Times
