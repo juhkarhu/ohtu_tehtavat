@@ -15,7 +15,6 @@ class UserService:
         self._user_repository = user_repository
 
     def check_credentials(self, username, password):
-        # korvaa tällä: self.validate(username, password)
         if not username or not password:
             raise UserInputError("Username and password are required")
 
