@@ -32,7 +32,6 @@ class Ostoskori:
                 self.ostoskori[i].muuta_lukumaaraa(1)
                 return
         else:
-            print('ei ollut ennestään')
             self.ostoskori.append(Ostos(lisattava))
 
 
