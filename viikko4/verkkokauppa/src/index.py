@@ -8,7 +8,7 @@ def main():
     # kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
     kauppa.aloita_asiointi()
     kauppa.lisaa_koriin(1)
-    kauppa.lisaa_koriin(3)
+    #kauppa.lisaa_koriin(3)
     kauppa.lisaa_koriin(3)
     kauppa.poista_korista(1)
     kauppa.tilimaksu("Pekka Mikkola", "1234-12345")
