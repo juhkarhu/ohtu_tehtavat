@@ -14,7 +14,7 @@ class TestOstoskori(unittest.TestCase):
 
     def test_yhden_tuotteen_lisaamisen_jalkeen_korissa_yksi_tavara(self):
         self.kori.lisaa_tuote(self.maito)
-        
+
         self.assertEqual(self.kori.tavaroita_korissa(), 1)
 
     def test_yhden_tuotteen_lisaamisen_jalkeen_ostoskorin_hinta_sama_kuin_tuotteen_hinta(self):
@@ -94,5 +94,10 @@ class TestOstoskori(unittest.TestCase):
         self.assertEqual(ostokset.tuotteen_nimi(), 'Kahvi')
         self.assertEqual(ostokset.lukumaara(), 1)
 
+    def test_jos_lisatty_tuote_joka_poistetaan_niin_kori_on_tyhja(self):
+        self.kori.lisaa_tuote(self.kahvi)
+        self.kori.poista_tuote(self.kahvi)
+        ostokset = self.kori.ostokset()[0]
+        self.assertEqual(ostokset.lukumaara(), 0)
 
 
