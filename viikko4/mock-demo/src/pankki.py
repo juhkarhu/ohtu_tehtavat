@@ -4,5 +4,5 @@ class Pankki:
             f"Siirretty {summa} tililtä {tilinumero} kaupan tilille, viite oli {viite}"
         )
 
-        # täällä tuhansia riviä koodia
+        # täällä tuhansia riviä koodija
         return True

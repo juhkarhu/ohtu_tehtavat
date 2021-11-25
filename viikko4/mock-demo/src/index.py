@@ -6,7 +6,7 @@ from kauppa import Kauppa
 def main():
     my_net_bank = Pankki()
     viitteet = Viitegeneraattori()
-    
+
     kumpula_bier_shop = Kauppa(my_net_bank, viitteet)
 
     kumpula_bier_shop.aloita_ostokset()
