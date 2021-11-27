@@ -65,10 +65,7 @@ class Kayttoliittyma:
     def _lue_syote(self):
         return int(self._syote_kentta.get())
 
-    
-
     def _suorita_komento(self, komento):
-        print(komento)
         komento_olio = self._komennot[komento]
         komento_olio.suorita()
         self._kumoa_painike["state"] = constants.NORMAL
