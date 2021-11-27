@@ -7,14 +7,13 @@ class TennisGame:
 
     def won_point(self, player_name):
         if player_name == "player1":
-            self.player1_score = self.player1_score + 1
+            self.player1_score += 1
         else:
-            self.player2_score = self.player2_score + 1
+            self.player2_score += 1
 
     def get_score(self):
         if self.player1_score == self.player2_score:
             return self.even_score()
-           
         elif self.player1_score >= 4 or self.player2_score >= 4:
             return self.advantage()
         else:
@@ -48,6 +47,7 @@ class TennisGame:
 
     def odd_score(self):
         score = ''
+
         for i in range(1, 3):
                 if i == 1:
                     temp_score = self.player1_score
