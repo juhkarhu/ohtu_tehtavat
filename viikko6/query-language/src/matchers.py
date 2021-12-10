@@ -50,7 +50,7 @@ class HasFewerThan:
         self._value = value
         self._attr = attr
 
-    def mathces(self, player):
+    def matches(self, player):
         player_value = getattr(player, self._attr)
 
         return player_value < self._value
